@@ -18,8 +18,19 @@ Console.WriteLine($"Сумма натуральных элементов в пр
 int SumDigitRange(int m, int n)
 {
 
+//     if (m < n)
+//     {
+
+//         return m + SumDigitRange(m + 1, n);
+//     }
+//     else if (m > n)
+//     {
+//         return m + SumDigitRange(m - 1, n);
+//     }
+//     else return m;
+
     if (m == n) return m;
 
     return m + SumDigitRange(m + 1, n);
-}
+ }
 
